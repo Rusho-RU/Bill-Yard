@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="NEW ENTRY"
+        app:titleTextColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/new_entry_flat_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:hint="Flat no."
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/new_entry_rent_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_entry_flat_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Rent Fee"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_entry_per_usit_cost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/new_entry_gas_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Gas Bill"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/new_entry_per_usit_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/new_entry_gas_bill"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Per Unit Cost"
+        android:inputType="number" />
+
+</RelativeLayout>
